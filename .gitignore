@@ -1,0 +1,12 @@
+
+*.class
+*.jar
+*.war
+*.ear
+
+.idea
+*.iml
+
+.mvn
+target/
+dependency-reduced-pom.xml

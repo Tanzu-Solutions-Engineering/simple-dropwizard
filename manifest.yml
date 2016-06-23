@@ -1,0 +1,7 @@
+---
+instances: 1
+memory: 512M
+applications:
+- name: simple-dropwizard
+  path: target/simple-dropwizard-1.0.0-SNAPSHOT.jar
+  command: echo "Starting dropwizard application." && $PWD/.java-buildpack/open_jdk_jre/bin/java -cp $PWD/*:. $JAVA_OPTS -Djava.io.tmpdir=$TMPDIR com.example.HelloWorldApplication server $PWD/dropwizard-application.yml
